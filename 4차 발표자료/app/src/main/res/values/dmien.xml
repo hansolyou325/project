@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_box_right_left_magin">30dp</dimen>
+    <dimen name="line_right_left_magin">20dp</dimen>
+    <dimen name="nomal_text_size">20dp</dimen>
+    <dimen name="line_stroke">2dp</dimen>
+</resources>

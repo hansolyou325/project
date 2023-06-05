@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegistActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_regist_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Name"
+            android:background="@drawable/round_box"/>
+
+        <EditText
+            android:id="@+id/et_regist_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Email"
+            android:background="@drawable/round_box"/>
+
+        <EditText
+            android:id="@+id/et_regist_pwd"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/round_box"/>
+
+        <EditText
+            android:id="@+id/et_regist_confirm"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Password Confirm"
+            android:inputType="textPassword"
+            android:background="@drawable/round_box"/>
+
+        <EditText
+            android:id="@+id/et_regist_phone"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Phone Number"
+            android:background="@drawable/round_box"/>
+
+        <Button
+            android:id="@+id/btn_regist_submit"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:background="@drawable/round_box_black"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

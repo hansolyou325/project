@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel\nApp\nWith\nSmart Key"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints"
+        android:translationZ="3dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hotel_main_image" />
+
+        <EditText
+            android:id="@+id/et_login_email"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Email"
+            android:background="@drawable/round_box"/>
+
+        <EditText
+            android:id="@+id/et_login_pwd"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:background="@drawable/round_box"/>
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:background="@drawable/round_box_black"/>
+
+        <TextView
+            android:id="@+id/tv_login_createAccount"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="25dp"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

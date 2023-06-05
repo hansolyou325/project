@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_emoji_emotions_24"
+                android:background="@drawable/circle_black"/>
+            
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="홍길동"
+                android:textStyle="bold"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/black"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_stroke"
+                android:background="@color/red"/>
+            
+            <TextView
+                android:id="@+id/tv_profile_email"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test@gmail.com"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_box"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_profile_auth_code"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_refresh_24"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="인증번호 변경"
+                        android:textSize="@dimen/nomal_text_size"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_stroke"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_profile_password"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_lock_24"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호 변경"
+                        android:textSize="@dimen/nomal_text_size"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_stroke"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_profile_logout"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_logout_24"/>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="로그아웃"
+                        android:textSize="@dimen/nomal_text_size"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+        <LinearLayout
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도어락 제어"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_admin_room_state_room_type"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_box"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_admin_room_state_room_type"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Room\nType"
+                        android:textSize="@dimen/nomal_text_size"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_admin_room_state_room_number"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_box"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_admin_room_state_room_number"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Room\nNumber"
+                        android:textSize="@dimen/nomal_text_size"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_admin_room_state_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="문열기"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용중"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/round_box"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ListView
+                    android:id="@+id/lv_admin_room_state_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비어있음"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/round_box"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ListView
+                    android:id="@+id/lv_admin_room_state_occupied"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
