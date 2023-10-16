@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 아래를 추가해야 popup dialog 시 특정 기종에서 에러가 발생하지 않는다 -->
+    <style name="LaunchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+</resources>

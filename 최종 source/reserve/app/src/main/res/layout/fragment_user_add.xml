@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+        <LinearLayout
+            android:layout_marginRight="@dimen/login_box_right_left_magin"
+            android:layout_marginLeft="@dimen/login_box_right_left_magin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="현재 사용 인원"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/round_box"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ListView
+                    android:id="@+id/lv_user_add_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="추가할 사용자 정보를 입력해 주세요."
+                android:textColor="@color/gray"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_user_add_email"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Email"
+                    android:background="@drawable/round_box"/>
+
+                <EditText
+                    android:id="@+id/et_user_add_phone"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Phone Number"
+                    android:background="@drawable/round_box"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_user_add_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용자 추가"/>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

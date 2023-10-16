@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">reserveNew</string>
+    <string name="item_home">메인 화면</string>
+    <string name="item_reserve">예약 내역</string>
+    <string name="item_faq">FAQ</string>
+    <string name="item_chat">매니저와 채팅</string>
+    <string name="item_profile">마이 페이지</string>
+
+</resources>

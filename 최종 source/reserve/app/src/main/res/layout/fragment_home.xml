@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 메인 스크롤 뷰 -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 메인 레이아웃 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 숙소 조회 레이아웃 -->
+            <LinearLayout
+                android:id="@+id/lv_home_room_list"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/login_box_right_left_magin"
+                android:layout_marginLeft="@dimen/login_box_right_left_magin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_box_blue">
+                <!-- 숙소 조회 화살표 그림 -->
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_white"
+                    android:src="@drawable/ic_sharp_chevron_right_24"/>
+                <!-- 숙소 조회 텍스트 뷰 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="숙소 조회"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+            <!-- 예약 호실 정보 텍스트 뷰 -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/login_box_right_left_magin"
+                android:layout_marginLeft="@dimen/login_box_right_left_magin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예약 호실 정보"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/login_box_right_left_magin"
+                android:layout_marginLeft="@dimen/login_box_right_left_magin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <TextView
+                    android:id="@+id/tv_home_none1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="예약한 숙소 정보가\n없습니다."
+                    android:textSize="@dimen/nomal_text_size"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_home_exist1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/hotel_main_image"/>
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_home_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="Deluxe"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:id="@+id/tv_home_room_number"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red"
+                                android:text="1502"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="호"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_home_room_name"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="홍길동"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_marginRight="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="님"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:gravity="end"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_home_room_check_in_date"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="3/09"
+                                android:textColor="@color/blue"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text=" ~ "
+                                android:textColor="@color/blue"/>
+                            <TextView
+                                android:id="@+id/tv_home_room_check_out_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="3/09"
+                                android:textColor="@color/blue"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_home_room_check_in_time"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="15"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="시 체크인"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_home_room_check_out_time"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="12"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="시 체크아웃"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- 구분선 -->
+            <View
+                android:layout_marginRight="@dimen/line_right_left_magin"
+                android:layout_marginLeft="@dimen/line_right_left_magin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_stroke"
+                android:background="@color/gray"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_home_lock"
+                android:layout_marginRight="@dimen/login_box_right_left_magin"
+                android:layout_marginLeft="@dimen/login_box_right_left_magin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="문열기"/>
+
+
+            <!-- 숙소 사용 현황 텍스트 뷰 -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/login_box_right_left_magin"
+                android:layout_marginLeft="@dimen/login_box_right_left_magin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="숙소 사용 현황"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/round_box"
+                android:layout_marginRight="@dimen/login_box_right_left_magin"
+                android:layout_marginLeft="@dimen/login_box_right_left_magin"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <!-- 예약된 숙소 있을시, -->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_home_exist2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="사용 인원"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/nomal_text_size"/>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_home_head_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30dp"
+                                android:textColor="@color/gray"
+                                android:text="2"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30dp"
+                                android:textColor="@color/gray"
+                                android:text="/"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_home_capacity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30dp"
+                                android:textColor="@color/red"
+                                android:text="3"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_home_add_person"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+ 예약 인원 추가"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_home_none2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="예약 정보가 없습니다."
+                    android:textSize="@dimen/nomal_text_size"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

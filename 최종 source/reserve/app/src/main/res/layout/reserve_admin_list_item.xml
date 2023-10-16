@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_margin="@dimen/login_box_right_left_magin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_box">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_reserve_list_item_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deluxe"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/tv_reserve_list_item_room_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="401"
+                    android:textSize="@dimen/nomal_text_size"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 호"
+                    android:textSize="@dimen/nomal_text_size"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약자 명 : "
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_reserve_list_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="==="
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_reserve_list_item_check_in_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-03-09"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ~  "
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/tv_reserve_list_item_check_out_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-03-10"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check In Time     : "
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/tv_reserve_list_item_check_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:00"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Out Time  : "
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/tv_reserve_list_item_check_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_reserve_list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60000"
+                android:textSize="@dimen/nomal_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 원"
+                android:textStyle="bold"
+                android:textSize="@dimen/nomal_text_size"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_reserve_list_cancel"
+        android:layout_marginTop="-22dp"
+        android:text="예약 취소"
+        android:layout_marginLeft="280dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+
+
+
+
+
+</LinearLayout>
